@@ -22,20 +22,17 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {
-            print("ElevatedButton clicked");//print message in the console when the button is clicked
-          },
-          icon: Icon(
-            Icons.mail_rounded,
-          ),
-          label: Text("Send Email"),
-          style: ElevatedButton.styleFrom(primary: Colors.red),
-        ),
-      ),
+          child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.mail_lock,
+                color: Colors.blueAccent,
+                size: 50,
+              ))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),
+        backgroundColor: Colors.red,
       ),
     );
   }
