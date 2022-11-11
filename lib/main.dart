@@ -26,7 +26,9 @@ class Home extends StatelessWidget {
             onPressed: () {},
             child: Text("Add Mail"),
             style: ElevatedButton.styleFrom(
-                primary: Colors.red[700], onPrimary: Colors.black)),
+              primary: Colors.red[700],
+              onPrimary: Colors.black,
+            )),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
