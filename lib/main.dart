@@ -21,14 +21,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[700],
         centerTitle: true,
       ),
-      body: Center(
-          child: IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.mail_lock,
-                color: Colors.blueAccent,
-                size: 50,
-              ))),
+      body: Container(
+        padding: EdgeInsets.fromLTRB(10, 20, 50, 40),
+        margin: EdgeInsets.all(20.0),
+        color: Colors.grey,
+        child: Text("Trying container widget"),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),
