@@ -26,6 +26,9 @@ class Home extends StatelessWidget {
               style: TextStyle(
                 color: Colors.red[900],
                 fontSize: 40,
+                fontStyle: FontStyle.italic,
+                decoration: TextDecoration.underline,
+                fontWeight: FontWeight.w800,
               ))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
