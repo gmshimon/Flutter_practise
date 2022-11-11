@@ -23,7 +23,9 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () {
+            print("ElevatedButton clicked");//print message in the console when the button is clicked
+          },
           icon: Icon(
             Icons.mail_rounded,
           ),
