@@ -22,13 +22,14 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: ElevatedButton(
-            onPressed: () {},
-            child: Text("Add Mail"),
-            style: ElevatedButton.styleFrom(
-              primary: Colors.red[700],
-              onPrimary: Colors.black,
-            )),
+        child: ElevatedButton.icon(
+          onPressed: () {},
+          icon: Icon(
+            Icons.mail_rounded,
+          ),
+          label: Text("Send Email"),
+          style: ElevatedButton.styleFrom(primary: Colors.red),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
