@@ -21,15 +21,18 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[700],
         centerTitle: true,
       ),
-      body: Center(
-          child: Text("Hello world!",
-              style: TextStyle(
-                color: Colors.red[900],
-                fontSize: 40,
-                fontStyle: FontStyle.italic,
-                decoration: TextDecoration.underline,
-                fontWeight: FontWeight.w800,
-              ))),
+      body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text("hello world"),
+            ElevatedButton(onPressed: () {}, child: Text("Click")),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              color: Colors.cyan,
+              child: Text("Hehe"),
+            )
+          ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),
