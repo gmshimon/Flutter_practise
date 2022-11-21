@@ -23,7 +23,9 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              print("hello world!");
+            },
             child: Text("Add Mail"),
             style: ElevatedButton.styleFrom(
               primary: Colors.red[700],
