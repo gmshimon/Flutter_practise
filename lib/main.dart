@@ -25,6 +25,12 @@ class Home extends StatelessWidget {
       ),
       body: Row(children: <Widget>[
         Expanded(
+          flex: 2,
+          child: Image(
+              image: NetworkImage(
+                  'https://i.natgeofe.com/n/2a12edda-3f79-45d1-b9bc-7ccc1499e5cf/1230_16x9.jpg?w=1200')),
+        ),
+        Expanded(
           flex: 3,
           child: Container(
             padding: EdgeInsets.all(20),
