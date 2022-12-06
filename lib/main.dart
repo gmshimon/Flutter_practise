@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -21,20 +23,27 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[700],
         centerTitle: true,
       ),
-      body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Text("hello world"),
-            ElevatedButton(onPressed: () {}, child: Text("Click")),
             Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.cyan,
-              child: Text("Hehe"),
-            )
+                padding: EdgeInsets.all(10),
+                color: Colors.yellow[700],
+                child: Text("INside container 1")),
+            Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.cyan,
+                child: Text("INside container 2")),
+            Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.blue[700],
+                child: Text("INside container 3")),
           ]),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          print("Hello world!");
+        },
         child: Text("Click"),
       ),
     );
